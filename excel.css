@@ -1,3 +1,14 @@
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-family: "Karla", sans-serif;
+  line-height: 1.4;
+}
+
+
 body {
   font-family: "Karla", sans-serif;
   background-image: url("../images/bg.jpg");
@@ -8,71 +19,39 @@ body {
   padding-bottom: 75px;
 }
 
-@media (min-width: 768px) {
-  body {
-    padding-bottom: 110px;
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.viewport-header {
+    position: relative;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-}
-.navbar-brand {
-  margin-right: 0;
-}
 
-.navbar-brand img {
-  height: 21px;
-}
-
-.navbar-dark {
-  padding-top: 35px;
-  padding-bottom: 35px;
-}
-
-.navbar-dark .navbar-text {
-  color: #ffffff;
-  opacity: 1;
-  padding: 0 20px;
-  border-right: 1px solid #ffffff;
-  font-size: 18px;
-  font-weight: bold;
-  text-align: center;
-}
-
-.navbar-dark .navbar-text:last-child {
-  border-right: 0;
-}
-
-@media (max-width: 767px) {
-  .navbar-dark {
-    padding-bottom: 0;
-  }
+.excel {
+  font-size: 30px;
 }
 .page-title {
   font-size: 80px;
   font-weight: bold;
   margin-bottom: 6px;
 }
-
-@media (max-width: 767px) {
-  .page-title {
-    font-size: 35px;
-    margin-bottom: 14px;
-  }
-}
 .page-description {
-  max-width: 465px;
   font-size: 18px;
-  margin-bottom: 59px;
 }
 
-@media (max-width: 767px) {
-  .page-description {
-    font-size: 14px;
-  }
+.stay-connected {
+  margin-top: 10%;
 }
-p {
-  font-size: 14px;
-  margin-bottom: 21px;
-}
-
 .footer-social-links .social-link {
   display: inline-block;
   text-align: center;
@@ -94,4 +73,19 @@ p {
   text-decoration: none;
   background-color: #000000;
   color: #ffffff;
+}
+
+/* Responsiveness */
+
+@media (max-width: 767px) {
+  body {
+    padding-bottom: 110px;
+  }
+  .page-title {
+    font-size: 35px;
+    margin-bottom: 14px;
+  }
+  .page-description {
+    font-size: 14px;
+  }
 }
