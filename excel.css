@@ -87,6 +87,28 @@ video {
   color: #ffffff;
 }
 
+.footer-social-linkss .social-link {
+  float: right;
+  text-align: bottom;
+  line-height: 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #000000;
+  margin-right: 16px;
+  transition: all 0.3s ease-in-out;
+  
+}
+
+
+
+.footer-social-linkss .social-link:hover {
+  text-decoration: none;
+  background-color: #000000;
+  color: #ffffff;
+}
+
 /* Responsiveness */
 
 @media (max-width: 767px) {
