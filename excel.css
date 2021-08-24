@@ -1,96 +1,158 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Excel 2021</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="excel.css" />
-  </head>
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+}
 
-  <body class="min-vh-100 d-flex flex-column">
+html {
+  font-family: "Karla", sans-serif;
+  line-height: 1.4;
+}
 
-    <div class="overlay">
-      
-      <video
-        loop
-        muted
-        autoplay
-        poster="excel.jpeg"
-        class="fullscreen-bg__video"
-        playsinline
-      >
-        <source src="Aftermovie.webm" type="video/webm" />
-        <source src="Aftermovie.mp4" type="video/mp4" />
-        <source src="Aftermovie.ogv" type="video/ogg" />
-      </video>
-      <header class="viewport-header">
-    
-        <main>
-          <div class="container">
-            <p class="excel"><img src="excel2021.svg" width="140" height="140"
-              />Excel 2021</p>
-            <h1 class="page-title">We're coming soon</h1>
-            <p class="page-description">
-              An avenue to inspire, innovate and engineer - the rendevous of technology and fun!
-            </p>
-            <p class="stay-connected">Stay connected</p>
-            <nav class="footer-social-links">
-              <a href="https://www.facebook.com/excelmec/" class="social-link"
-                ><i class="mdi mdi-facebook-box"></i
-              ></a>
-              <a href="https://twitter.com/excelmec/" class="social-link"
-                ><i class="mdi mdi-twitter"></i
-              ></a>
-             
-              <a
-                href="https://www.linkedin.com/company/excelmec/"
-                class="social-link"
-                ><i class="mdi mdi-linkedin"></i
-              ></a>
-              <a href="https://www.instagram.com/excelmec/" class="social-link"
-                ><i class="mdi mdi-instagram"></i
-              ></a>
-            </nav>
-          </div>
-        </main>
-       
-      
-      </header>
-    
-      </div>
-      <div class="row legacy-btn">
-        <div class="col-10">  <nav class="navbar navbar-dark bg-transparenet">
-        
-          <span class="navbar-text d-none d-sm-inline-block">  
-            <div class="footer-social-linkss">
-              <a href="https://excelmec.org/excel2020/" class="legacy-link"
-                ><img src="excel2020.png" width="40" height="40"
-              /></a>
-              <a href="https://excelmec.org/excel2019/" class="legacy-link"
-                ><img src="excel2019.png" width="40" height="40"
-              /></a>
-              <a href="https://excelmec.org/excel2018/" class="legacy-link"
-                ><img src="excel2018.png" width="40" height="40"
-              /></a>
-              <a href="https://excelmec.org/excel2017/" class="legacy-link"
-                ><img src="excel2017.png" width="40" height="40"
-              /></a>
-            </div></span>
-       </nav>
-    </div>
-    
-  </body>
-</html>
+
+body {
+  font-family: "Karla", sans-serif;
+  background-image: url("excel.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #ffffff;
+  padding-bottom: 75px;
+}
+
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+}
+.overlay
+{
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color:black;
+  opacity: 1;
+}
+
+.viewport-header {
+    position: relative;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.excel {
+  font-size: 30px;
+}
+.page-title {
+  font-size: 80px;
+  font-weight: bold;
+  margin-bottom: 6px;
+  text-shadow: 2px 2px #525151;
+}
+.page-description {
+  font-size: 22px;
+  color:#dfd9d9;
+}
+.legacy-btn{
+  margin-left:80%;
+
+}
+
+.stay-connected {
+  margin-top: 10%;
+}
+.footer-social-links .social-link {
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #000000;
+  margin-right: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-social-links .social-link:last-child {
+  margin-right: 0;
+}
+
+.footer-social-links .social-link:hover {
+  text-decoration: none;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.footer-social-linkss .social-link {
+
+  line-height: 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #000000;
+  transition: all 0.3s ease-in-out;
+  
+}
+
+
+
+.social-link:hover {
+  text-decoration: none;
+  background-color: #000000;
+  color: #ffffff;
+}
+.legacy-link {
+  border-radius: 80%;
+}
+/* Responsiveness */
+
+@media (max-width: 767px) {
+  body {
+    padding-bottom: 110px;
+  }
+  .page-title {
+    font-size: 35px;
+    margin-bottom: 14px;
+  }
+  .page-description {
+    font-size: 14px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+.navbar-dark {
+  padding-top: 35px;
+  float: right;
+  padding-bottom: 35px;
+}
+
+
+.navbar-dark .navbar-text:last-child {
+  border-right: 0;
+}
+
+@media (max-width: 767px) {
+  .navbar-dark {
+    padding-bottom: 0;
+  }
+}
