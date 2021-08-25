@@ -37,7 +37,7 @@ video {
   position: fixed;
   top: 0;
   left: 0;
-  background-color:black;
+  background-color:#3b0141;
   opacity: 1;
 }
 
@@ -57,7 +57,7 @@ video {
   font-size: 80px;
   font-weight: bold;
   margin-bottom: 6px;
-  text-shadow: 2px 2px #525151;
+  text-shadow: 2px 2px #a3588a;
 }
 .page-description {
   font-size: 22px;
