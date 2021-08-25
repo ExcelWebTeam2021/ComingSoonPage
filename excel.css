@@ -122,7 +122,7 @@ video {
 }
 /* Responsiveness */
 
-@media (max-width: 767px) {
+@media (max-width: 800px) {
   body {
     padding-bottom: 110px;
   }
@@ -155,7 +155,7 @@ video {
   border-right: 0;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 800px) {
   .navbar-dark {
     padding-bottom: 0;
   }
