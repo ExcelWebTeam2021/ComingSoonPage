@@ -127,11 +127,15 @@ video {
     padding-bottom: 110px;
   }
   .page-title {
-    font-size: 35px;
+    font-size: 45px;
     margin-bottom: 14px;
   }
   .page-description {
     font-size: 14px;
+  }
+  .excel
+  {
+  font-size: 30px;
   }
 }
 
